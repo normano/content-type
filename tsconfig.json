@@ -2,7 +2,12 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "target": "es2018",
-    "module": "commonjs",
-    "declaration": true
-  }
+    "module": "commonjs"
+  },
+  "include": [
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "./tests/**/*.ts"
+  ]
 }

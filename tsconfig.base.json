@@ -1,20 +1,14 @@
 {
   "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "dist/node",
-    "moduleResolution": "node",
+    "declaration": true,
+    "moduleResolution": "Node16",
     "sourceMap": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "strict": true,
     "stripInternal": true,
     "importsNotUsedAsValues": "remove"
-  },
-  "include": [
-    "./src/**/*.ts"
-  ],
-  "exclude": [
-    "./tests/**/*.ts"
-  ]
+  }
 }

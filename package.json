@@ -11,10 +11,18 @@
     "res",
     "rfc7231"
   ],
+  "type": "module",
   "repository": "normano/content-type",
   "main": "dist/node/index.js",
   "browser": "dist/browser/index.js",
   "module": "dist/node/index.mjs",
+  "exports": {
+    ".": {
+      "browser": "./dist/browser/index.js",
+      "require": "./dist/cjs/index.cjs",
+      "import": "./dist/esm/index.mjs"
+    }
+  },
   "scripts": {
     "lint": "eslint .",
     "test": "mocha --reporter spec --check-leaks --bail test/",
@@ -26,18 +34,18 @@
     "build:browser": "tsc -p tsconfig.browser.json"
   },
   "devDependencies": {
-    "@types/node": "^17.0.23",
+    "@types/node": "^18.7.6",
     "deep-equal": "2.0.5",
-    "eslint": "8.11.0",
-    "eslint-config-standard": "16.0.3",
-    "eslint-plugin-import": "2.25.4",
+    "eslint": "8.22.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-import": "2.26.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "6.0.0",
     "eslint-plugin-standard": "4.1.0",
-    "mocha": "9.2.2",
+    "mocha": "10.0.0",
     "nyc": "15.1.0",
-    "ts-node": "^10.7.0",
-    "typescript": "^4.6.2"
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
   },
   "files": [
     "LICENSE",

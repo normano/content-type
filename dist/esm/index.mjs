@@ -168,9 +168,11 @@ function qstring(val) {
  * @private
  */
 export class ContentType {
+    parameters;
+    type;
     constructor(type) {
         this.parameters = {};
         this.type = type;
     }
 }
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=index.mjs.map

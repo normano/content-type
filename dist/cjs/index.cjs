@@ -173,10 +173,12 @@ function qstring(val) {
  * @private
  */
 class ContentType {
+    parameters;
+    type;
     constructor(type) {
         this.parameters = {};
         this.type = type;
     }
 }
 exports.ContentType = ContentType;
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=index.cjs.map
